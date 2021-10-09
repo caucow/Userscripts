@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ZyBooks-DarkMode
 @namespace      https://caucraft.com/
-@version        1.0.0
+@version        1.0.1
 @description    Adds a dark mode to ZyBooks
 @author         Shadowtrot
 @homepageURL    https://github.com/caucow/Userscripts
@@ -49,7 +49,8 @@
     .zb-text-area:focus,
     input:focus,
     .zb-input:focus,
-    div.codeOutput textarea.console:focus {
+    div.codeOutput textarea.console:focus,
+    .question > button.zb-button.grey {
         font-family: monospace !important;
     }
     .animation-canvas,
@@ -186,13 +187,15 @@
     .find-zybook-section .find-zybook-input,
     .ember-power-select-trigger,
     .ember-power-select-dropdown,
-    .pika-single {
+    .pika-single,
+    .question > .zb-button.grey {
         background-color: #2b2b2b;
         color: #aaaaaa;
     }
     .body-text,
     .ember-basic-dropdown-content,
-    .pika-label {
+    .pika-label,
+    .zylab-submission-result .zb-checkbox {
         background: transparent;
         color: #aaaaaa;
     }
@@ -497,7 +500,8 @@
     .activity-title-bar,
     .activity-description,
     .activity-type,
-    .inline-editor-header {
+    .inline-editor-header,
+    .lab-score {
         background-color: #242424 !important;
         color: #a0a0a0 !important;
     }
