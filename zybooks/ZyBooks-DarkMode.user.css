@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ZyBooks-DarkMode
 @namespace      https://caucraft.com/
-@version        1.0.1
+@version        1.0.2
 @description    Adds a dark mode to ZyBooks
 @author         Shadowtrot
 @homepageURL    https://github.com/caucow/Userscripts
@@ -153,7 +153,8 @@
     .zylab-ui-page .grey.accessible.copy-pw-clipboard,
     .zylab-ui-page .grey.copy-pw-clipboard,
     .zylab-ui-page .section-header-row .section-action-container .grey.accessible.edit-lab-link,
-    .zylab-ui-page .section-header-row .section-action-container .grey.edit-lab-link {
+    .zylab-ui-page .section-header-row .section-action-container .grey.edit-lab-link,
+    div.codeOutput table.explanation-table td div.newline-messaging {
         color: #999999;
     }
     .bread-crumbs a {
