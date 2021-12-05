@@ -555,6 +555,11 @@
     .signup-page .signin-card .disclaimer-text {
         color: #aaaaaa;
     }
+    .expected-output-test-result .no-output-result,
+    .manual-deduction-test-result .no-output-result,
+    .manual-grade-test-result .no-output-result {
+        color: #802020;
+    }
 
 
     /* Soo many possibilities and hard-coded tag-specific colors with
@@ -663,7 +668,7 @@
     .correct::after {
         border: 4px solid #80d080 !important;
     }
-    .correct .message {
+    .correct .message, .updateArrVal .correct {
         color: #80d080 !important;
     }
     .incorrect {
