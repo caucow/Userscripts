@@ -9,7 +9,7 @@
 @updateURL      https://raw.githubusercontent.com/caucow/Userscripts/main/zybooks/ZyBooks-DarkMode.user.css
 @license        MIT
 ==/UserStyle== */
-@-moz-document domain("learn.zybooks.com") {
+@-moz-document domain("learn.zybooks.com"), regexp(".+://js\\.stripe\\.com.+referrer=https%3A%2F%2Flearn\\.zybooks\\.com.+") {
     /**********************
      Layout/Format Changes
     **********************/
@@ -193,10 +193,17 @@
         background-color: #2b2b2b;
         color: #aaaaaa;
     }
+    .ElementsApp input,
+    .ElementsApp .InputElement input {
+        background: transparent !important;
+        color: #aaaaaa !important;
+    }
     .body-text,
     .ember-basic-dropdown-content,
     .pika-label,
-    .zylab-submission-result .zb-checkbox {
+    .zylab-submission-result .zb-checkbox,
+    .zb-checkbox label,
+    .zb-checkbox.sm label {
         background: transparent;
         color: #aaaaaa;
     }
@@ -236,7 +243,11 @@
     .assignment-completion-summary-card,
     .assignment-details,
     .text-lg,
-    .zb-modal-card-container {
+    .zb-modal-card-container,
+    .email-card,
+    .password-card,
+    .text-sm,
+    .text-blue-grey-800 {
         background-color: #2b2b2b !important;
         color: #aaaaaa !important;
     }
