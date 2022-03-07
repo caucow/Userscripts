@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ZyBooks-DarkMode
 @namespace      https://caucraft.com/
-@version        1.0.3
+@version        1.0.4
 @description    Adds a dark mode to ZyBooks
 @author         Shadowtrot
 @homepageURL    https://github.com/caucow/Userscripts
@@ -518,8 +518,9 @@
         background-color: #242424 !important;
         color: #a0a0a0 !important;
     }
-    .zb-button.secondary {
-        color: #60a0e0;
+    .zb-button.secondary,
+    .zb-simple-expandable .title {
+        color: #aaaaff;
     }
     .zybook-section .table table th,
     th,
@@ -576,7 +577,6 @@
     /* Soo many possibilities and hard-coded tag-specific colors with
    interactives. Hecc that, just graduate to semi-light theme. */
     .interactive-activity-container,
-    .interactive-activity-container .activity-payload,
     .static-container,
     .instructions-div,
     blockquote {
