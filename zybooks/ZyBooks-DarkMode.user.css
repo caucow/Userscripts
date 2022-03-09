@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ZyBooks-DarkMode
 @namespace      https://caucraft.com/
-@version        1.0.4
+@version        1.0.5
 @description    Adds a dark mode to ZyBooks
 @author         Shadowtrot
 @homepageURL    https://github.com/caucow/Userscripts
@@ -74,7 +74,8 @@
         color: #999999;
         background-color: #000000;
     }
-    .zb-menu button {
+    .zb-menu button,
+    .zb-menu .ember-basic-dropdown-trigger {
         background-color: #303030 !important;
         color: #999999 !important;
     }
@@ -490,7 +491,8 @@
     .text-element > span,
     .variable-or-IO-label,
     span.zyante-progression-explanation,
-    .library-page .zybooks-section-header {
+    .library-page .zybooks-section-header,
+    .zb-progress-circular.label-present {
         background-color: transparent;
         color: #dddddd;
     }
